@@ -1,5 +1,6 @@
 import React from "react";
 import './AlgoDescription.css'
+// import heapSort from "../algorithms/HeapSort";
 
 const AlgoDescription = ({ algo }) => {
   const algoDescriptions = {
@@ -43,6 +44,9 @@ const AlgoDescription = ({ algo }) => {
       swaps it with the leftmost unsorted element, and grows the sorted portion of the list 
       one element at a time. Although simple, Selection Sort is inefficient for large datasets, 
       with a time complexity of O(n²).
+    `,
+    heapSort: `
+      Heap Sort is a comparison-based sorting algorithm using a binary heap. It builds a max-heap from the input array, where the largest element is at the root. Then, it swaps the root with the last element, reduces the heap size, and re-heapifies. This process repeats until the array is sorted. The time complexity is O(n log n), and it’s an in-place algorithm.
     `
   };
 

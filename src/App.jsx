@@ -9,6 +9,7 @@ import selectionSort from "./algorithms/SelectionSort";
 import insertionSort from "./algorithms/InsertionSort";
 import mergeSort from "./algorithms/MergeSort";
 import quickSort from "./algorithms/QuickSort";
+import heapSort from "./algorithms/HeapSort";
 
 function App() {
   const generateRandomArray = (len) => {
@@ -111,6 +112,8 @@ function App() {
       ? sortAccOrder(mergeSort(blocks))
       : algo === "quickSort"
       ? sortAccOrder(quickSort(blocks))
+      : algo === "heapSort"
+      ? sortAccOrder(heapSort(blocks))
       : (() => {
           setSorting(false);
           setCompleted(true);
