@@ -50,6 +50,7 @@ const Navbar = ({
             <option value="insertionSort">Insertion Sort</option>
             <option value="mergeSort">Merge Sort</option>
             <option value="quickSort">Quick Sort</option>
+            <option value="heapSort">Heap Sort</option>
           </select>
         </div>
 
@@ -57,7 +58,7 @@ const Navbar = ({
           <button onClick={generateRandomArray} disabled={sorting}>
             New Array
           </button>
-          <button onClick={handleSort} disabled={sorting || completed}>
+          <button onClick={handleSort} disabled={sorting }>
             Sort
           </button>
         </div>

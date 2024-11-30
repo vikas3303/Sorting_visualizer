@@ -85,9 +85,9 @@ function App() {
         setCompare([j, k]);
         setSwap([]);
 
-        if (index !== null) {
-          setSortedIndex((prevState) => [...prevState, index]);
-        }
+        // if (index !== null) {
+        //   setSortedIndex((prevState) => [...prevState, index]);
+        // }
 
         if (arr) {
           setBlocks(arr);
@@ -100,7 +100,7 @@ function App() {
 
       loop();
     };
-
+     
     setSorting(true);
     algo === "bubbleSort"
       ? sortAccOrder(bubbleSort(blocks))
